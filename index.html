@@ -8,15 +8,19 @@ body {
     font-family: 'Segoe UI', Arial;
     margin: 0;
     background: #f5f7fa;
-    color: #1f2937;
 }
 
 /* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 20px 60px;
+    padding: 20px 50px;
     background: white;
+}
+
+.navbar-right a {
+    text-decoration: none;
+    font-size: 20px;
 }
 
 /* HERO */
@@ -24,7 +28,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 70px 60px;
+    padding: 60px;
     background: white;
 }
 
@@ -33,21 +37,14 @@ body {
 }
 
 .hero h1 {
-    font-size: 42px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    color: #4b5563;
-    line-height: 1.6;
+    font-size: 40px;
 }
 
 .buttons a {
-    margin-right: 12px;
-    padding: 12px 18px;
-    border-radius: 6px;
+    margin-right: 10px;
+    padding: 10px 15px;
+    border-radius: 5px;
     text-decoration: none;
-    font-weight: 500;
 }
 
 .btn-primary {
@@ -56,14 +53,13 @@ body {
 }
 
 .btn-outline {
-    border: 1px solid #374151;
-    color: #111827;
+    border: 1px solid black;
+    color: black;
 }
 
 .hero img {
-    width: 240px;
+    width: 220px;
     border-radius: 50%;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
 }
 
 /* STATS */
@@ -72,7 +68,7 @@ body {
     justify-content: space-around;
     background: #0f172a;
     color: white;
-    padding: 50px;
+    padding: 40px;
 }
 
 .stat {
@@ -80,19 +76,18 @@ body {
 }
 
 .icon {
-    font-size: 32px;
+    font-size: 30px;
     color: #facc15;
 }
 
 /* SECTION */
 .section {
-    padding: 50px 60px;
+    padding: 40px 60px;
 }
 
 h2 {
-    border-bottom: 2px solid #e5e7eb;
-    padding-bottom: 8px;
-    margin-bottom: 25px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
 }
 
 /* TIMELINE */
@@ -104,34 +99,34 @@ h2 {
 .timeline::before {
     content: '';
     position: absolute;
-    left: 12px;
+    left: 10px;
     width: 3px;
     height: 100%;
-    background: #e5e7eb;
+    background: #d1d5db;
 }
 
 .timeline-item {
     position: relative;
-    margin-bottom: 40px;
-    padding-left: 45px;
+    margin-bottom: 30px;
+    padding-left: 40px;
 }
 
 .timeline-item::before {
     content: '';
     position: absolute;
-    left: 4px;
-    top: 8px;
-    width: 16px;
-    height: 16px;
+    left: 0;
+    top: 5px;
+    width: 15px;
+    height: 15px;
     background: #3b82f6;
     border-radius: 50%;
 }
 
 .card {
     background: white;
-    padding: 22px;
-    border-radius: 12px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .role {
@@ -142,18 +137,17 @@ h2 {
 .company {
     color: #3b82f6;
     font-weight: 500;
-    margin-bottom: 10px;
 }
 
 ul {
-    line-height: 1.7;
+    line-height: 1.6;
 }
-
-/* SKILLS */
+/* SKILLS SECTION */
 .skills-container {
     display: flex;
     justify-content: space-between;
     gap: 30px;
+    margin-top: 30px;
 }
 
 .skill-column {
@@ -165,6 +159,7 @@ ul {
     margin-bottom: 15px;
     border-bottom: 2px solid #3b82f6;
     display: inline-block;
+    padding-bottom: 5px;
 }
 
 .skill-chip {
@@ -174,41 +169,21 @@ ul {
     background: #eef2f7;
     margin: 6px 6px 0 0;
     font-size: 14px;
-}
-
-/* CONTACT */
-.contact-section {
-    text-align: center;
-    padding: 60px 20px;
-}
-
-.contact-buttons a {
-    display: inline-block;
-    margin: 10px;
-    padding: 12px 20px;
-    border-radius: 25px;
-    border: 1px solid #d1d5db;
-    text-decoration: none;
-    color: #111827;
-    background: white;
-}
-
-.contact-buttons a:hover {
-    background: #3b82f6;
-    color: white;
-}
+}    
 </style>
 </head>
 
 <body>
 
+<!-- NAVBAR -->
 <div class="navbar">
     <div></div>
-    <div>
+    <div class="navbar-right">
         <a href="https://www.linkedin.com/in/sachin-gayakwad-pmp%C2%AE-6%CF%83-black-belt%C2%AE-13005b104/" target="_blank">🔗</a>
     </div>
 </div>
 
+<!-- HERO -->
 <div class="hero">
     <div class="hero-text">
         <h1>Sachin Gayakwad</h1>
@@ -217,7 +192,7 @@ ul {
         </p>
 
         <div class="buttons">
-            <a href="mailto:Sachingkwd21@gmail.com" class="btn-primary">Get in Touch</a>
+            <a href="mailto:yourmail@gmail.com" class="btn-primary">Get in Touch</a>
             <a href="Sachin_Gayakwad_Resume.pdf" class="btn-outline">Download Resume</a>
         </div>
     </div>
@@ -225,6 +200,7 @@ ul {
     <img src="profile.jpg">
 </div>
 
+<!-- STATS -->
 <div class="stats">
     <div class="stat">
         <div class="icon">📈</div>
@@ -245,79 +221,146 @@ ul {
     </div>
 </div>
 
+<!-- ABOUT -->
 <div class="section">
     <h2>About Me</h2>
     <p>
-    Mechanical Lead Engineer with 13+ years of experience in electro-mechanical design, NPI, and global product delivery.
+    Mechanical Lead Engineer and Strategic Engineering Leader with 12.5+ years of experience...
     </p>
-</div>
-
+    <!-- SKILLS -->
 <div class="section">
-    <h2>Technical Expertise</h2>
+    <h2 style="text-align:center;">Technical Expertise</h2>
 
     <div class="skills-container">
 
+        <!-- PROJECT MANAGEMENT -->
         <div class="skill-column">
             <div class="skill-title">Project Management</div>
-            <div class="skill-chip">PMP</div>
+            <div class="skill-chip">PMP Certified</div>
             <div class="skill-chip">Six Sigma Black Belt</div>
-            <div class="skill-chip">Cost Optimization</div>
+            <div class="skill-chip">Program Management</div>
+            <div class="skill-chip">Cost Optimization ($15M+)</div>
             <div class="skill-chip">Risk Management</div>
+            <div class="skill-chip">Vendor & Supplier Management</div>
         </div>
 
+        <!-- ENGINEERING -->
         <div class="skill-column">
             <div class="skill-title">Engineering</div>
-            <div class="skill-chip">NPI/NPD</div>
-            <div class="skill-chip">DFMEA</div>
+            <div class="skill-chip">Product Development (NPD/NPI)</div>
+            <div class="skill-chip">System Integration</div>
+            <div class="skill-chip">DFMEA / DFX</div>
             <div class="skill-chip">GD&T</div>
+            <div class="skill-chip">Tolerance Stack-up</div>
             <div class="skill-chip">FEA</div>
+            <div class="skill-chip">Appliance Systems</div>
+            <div class="skill-chip">Switchgear Design</div>
         </div>
 
+        <!-- TOOLS -->
         <div class="skill-column">
-            <div class="skill-title">Tools</div>
+            <div class="skill-title">Tools & Software</div>
             <div class="skill-chip">Creo</div>
             <div class="skill-chip">SolidWorks</div>
-            <div class="skill-chip">SAP</div>
+            <div class="skill-chip">Cetol</div>
             <div class="skill-chip">Minitab</div>
+            <div class="skill-chip">SAP</div>
+            <div class="skill-chip">Windchill PLM</div>
+            <div class="skill-chip">Lucidchart</div>
+            <div class="skill-chip">DFM Pro</div>
         </div>
 
     </div>
 </div>
 
+<!-- EXPERIENCE -->
 <div class="section">
     <h2>Professional Journey</h2>
+
     <div class="timeline">
+
         <div class="timeline-item">
             <div class="card">
-                <div class="role">Lead Engineer</div>
-                <div class="company">Whirlpool Corporation</div>
+                <div class="role">Lead Engineer (Engineering Manager)</div>
+                <div class="company">Whirlpool Corporation | Jan 2017 – Present</div>
                 <ul>
-                    <li>Leading global product development</li>
-                    <li>Driving cost optimization initiatives</li>
+                    <li>Spearheading end-to-end design, integration, and system validation of complex home appliance systems.</li>
+                    <li>Managed complete new product development lifecycle, covering requirement analysis, target definition, concept engineering, subsystem integration, and validation testing.</li>
+                    <li>Ensuring compliance with UL, COC, CB, IEC standards.</li>
+                    <li>Mentored 10+ engineers in delivering subsystem-level designs.</li>
                 </ul>
             </div>
         </div>
+
+        <div class="timeline-item">
+            <div class="card">
+                <div class="role">Sr. Design & Development Engineer</div>
+                <div class="company">Elcom | Jun 2014 – Dec 2016</div>
+                <ul>
+                    <li>Designed NEMA plugs, LV switches, solar connectors.</li>
+                    <li>Proficient in design simulation, tolerance stack-up and statistical validation using Cetol, Creo, Minitab, SAP, SolidWorks, Lucidchart, DFMPro.</li>
+                    <li>Drove line complexity reduction initiatives, achieving a 28% improvement in production cycle time for micro switch assembly processes.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="card">
+                <div class="role">Design Engineer</div>
+                <div class="company">IEW Cranes | Jun 2013 – May 2014</div>
+                <ul>
+                    <li>Designed cranes and hoists with manufacturability focus.</li>
+                    <li>Gained extensive exposure to plastic and sheet metal component design, strengthening multi-domain design versatility.</li>
+                </ul>
+            </div>
+        </div>
+
     </div>
 </div>
 
+<!-- PROJECTS -->
 <div class="section">
     <h2>Engineering Projects</h2>
-    <ul>
-        <li>Auto Turn-On Hood</li>
-        <li>Wall Oven with Camera</li>
-        <li>Cooktops & Ranges</li>
-    </ul>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="card">
+                <div class="role">Auto Turn-On Hood</div>
+                <div class="company">Asia & North America Region</div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="card">
+                <div class="role">Wall Oven with Built-in Camera</div>
+                <div class="company">EMEA & North America Region</div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="card">
+                <div class="role">Gas & Induction Cooktop</div>
+                 <div class="company">Asia, EMEA & North America Region</div>
+            </div>
+
+            </div>
+
+        <div class="timeline-item">
+            <div class="card">
+                <div class="role">Switch Gears Micro switches & NEMA </div>
+                <div class="company">North America Region</div>
+            </div>
+        </div>
+
+    </div>
 </div>
 
-<div class="contact-section">
-    <h2>Let's Connect</h2>
-    <p>Currently based in Pune, India.</p>
-
-    <div class="contact-buttons">
-        <a href="mailto:Sachingkwd21@gmail.com">📧 Email Me</a>
-        <a href="https://www.linkedin.com/in/sachin-gayakwad-pmp%C2%AE-6%CF%83-black-belt%C2%AE-13005b104/">🔗 LinkedIn</a>
-        <a href="tel:+919130266146">📞 Call Me</a>
-    </div>
+<!-- CONTACT -->
+<div class="section">
+    <h2>Contact</h2>
+    <p>Email: Sachingkwd21@gmail.com</p>
+    <p>Phone:+91-9130266146</p>
 </div>
 
 </body>
