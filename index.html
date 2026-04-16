@@ -38,12 +38,6 @@ body {
 
 .hero h1 {
     font-size: 40px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    color: #555;
-    line-height: 1.5;
 }
 
 .buttons a {
@@ -84,7 +78,6 @@ body {
 .icon {
     font-size: 30px;
     color: #facc15;
-    margin-bottom: 10px;
 }
 
 /* SECTION */
@@ -95,6 +88,55 @@ body {
 h2 {
     border-bottom: 2px solid #ddd;
     padding-bottom: 5px;
+}
+
+/* TIMELINE */
+.timeline {
+    position: relative;
+    margin-left: 20px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    width: 3px;
+    height: 100%;
+    background: #d1d5db;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 40px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    width: 15px;
+    height: 15px;
+    background: #3b82f6;
+    border-radius: 50%;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.role {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.company {
+    color: #3b82f6;
+    font-weight: 500;
 }
 
 ul {
@@ -115,11 +157,8 @@ ul {
 
 <!-- HERO -->
 <div class="hero">
-
     <div class="hero-text">
-
         <h1>Sachin Gayakwad</h1>
-
         <p>
         Engineering Leader | System Integrator | 13 yrs | Mechanical Engineering | Product Development, NPI | Structural Design, FEA | Appliances & Electromechanical Systems (Switchgear) | Cost Optimization ($15M+) | PMP | Six Sigma Black Belt | VA/VE, DFX
         </p>
@@ -130,13 +169,11 @@ ul {
         </div>
     </div>
 
-    <img src="profile.jpg" alt="Profile">
-
+    <img src="profile.jpg">
 </div>
 
 <!-- STATS -->
 <div class="stats">
-
     <div class="stat">
         <div class="icon">📈</div>
         <h2>$15M+</h2>
@@ -154,14 +191,13 @@ ul {
         <h2>13+</h2>
         <p>Years Experience</p>
     </div>
-
 </div>
 
 <!-- ABOUT -->
 <div class="section">
     <h2>About Me</h2>
     <p>
-    Mechanical Lead Engineer and Strategic Engineering Leader with 12.5+ years of experience in electro-mechanical design, structural engineering, product lifecycle management (PLM), and global NPI delivery. Expert in system integration, Project management, New product development (NPD), sustaining engineering, DFMEA, DFX, GD&T, CTS/CTQ, tolerance stack-up, and design controls aligned with UL/IEC/CE regulatory standards. Certified Six Sigma Black Belt and PMP with strong capability in feasibility studies, risk management, value engineering (VE), complexity reduction, and supplier collaboration. Proven track record in driving architecture definition, cross functional leadership, cost optimization, manufacturability improvements, and data-driven problem solving to deliver reliable, scalable, and compliant product platforms across global electro-mechanical programs.
+    Mechanical Lead Engineer and Strategic Engineering Leader with 12.5+ years of experience...
     </p>
 </div>
 
@@ -169,58 +205,76 @@ ul {
 <div class="section">
     <h2>Professional Journey</h2>
 
-    <p><b>Lead Engineer (Engineering Manager)</b><br>
-    Whirlpool Corporation | Jan 2017 – Present</p>
+    <div class="timeline">
 
-    <ul>
-        <li>Spearheading end-to-end design, integration, and system validation of complex home appliance systems across global programs.</li>
-        <li>Leading requirements analysis, scoping, effort estimation, and project execution with global teams.</li>
-        <li>Ensuring compliance with UL, COC, CB, and IEC standards across Asia and North America.</li>
-    </ul>
+        <div class="timeline-item">
+            <div class="card">
+                <div class="role">Lead Engineer (Engineering Manager)</div>
+                <div class="company">Whirlpool Corporation | Jan 2017 – Present</div>
+                <ul>
+                    <li>Spearheading end-to-end design and system validation across global programs.</li>
+                    <li>Leading requirements, estimation, and execution with global teams.</li>
+                    <li>Ensuring compliance with UL, COC, CB, IEC standards.</li>
+                </ul>
+            </div>
+        </div>
 
-    <p><b>Sr. Design & Development Engineer</b><br>
-    Elcom | Jun 2014 – Dec 2016</p>
+        <div class="timeline-item">
+            <div class="card">
+                <div class="role">Sr. Design & Development Engineer</div>
+                <div class="company">Elcom | Jun 2014 – Dec 2016</div>
+                <ul>
+                    <li>Designed NEMA plugs, LV switches, solar connectors.</li>
+                    <li>Expert in simulation and tolerance stack-up.</li>
+                </ul>
+            </div>
+        </div>
 
-    <ul>
-        <li>Designed and developed NEMA plugs, LV switches, solar connectors, and IEC plugs & sockets.</li>
-        <li>Strong expertise in LV switches, solar connectors, junction boxes, and fuses.</li>
-        <li>Performed simulation, tolerance stack-up, and validation using Cetol, Creo, Minitab, SAP, SolidWorks.</li>
-    </ul>
+        <div class="timeline-item">
+            <div class="card">
+                <div class="role">Design Engineer</div>
+                <div class="company">IEW Cranes | Jun 2013 – May 2014</div>
+                <ul>
+                    <li>Designed cranes and hoists with manufacturability focus.</li>
+                </ul>
+            </div>
+        </div>
 
-    <p><b>Design Engineer</b><br>
-    IEW Cranes | Jun 2013 – May 2014</p>
-
-    <ul>
-        <li>Designed hoists, Goliath cranes, and Jib cranes with focus on performance and manufacturability.</li>
-        <li>Used Creo for modeling, BOM, and cost analysis.</li>
-        <li>Collaborated with manufacturing for smooth production transition.</li>
-    </ul>
+    </div>
 </div>
 
 <!-- PROJECTS -->
 <div class="section">
     <h2>Engineering Projects</h2>
 
-    <ul>
-        <li>Auto Turn-On Hood for NAR Region</li>
-        <li>Wall Oven with Built-in Camera</li>
-        <li>Gas & Induction Cooktop</li>
-        <li>Freestanding Range (Gas & Electrical)</li>
-        <li>EV Switch – Micro & Rotary</li>
-        <li>NEMA Plugs and Sockets</li>
-    </ul>
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="card">
+                <div class="role">Auto Turn-On Hood</div>
+                <div class="company">North America Region</div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="card">
+                <div class="role">Wall Oven with Built-in Camera</div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="card">
+                <div class="role">Gas & Induction Cooktop</div>
+            </div>
+        </div>
+
+    </div>
 </div>
 
 <!-- CONTACT -->
 <div class="section">
     <h2>Contact</h2>
     <p>Email: yourmail@gmail.com</p>
-    <p>
-    LinkedIn: 
-    <a href="https://www.linkedin.com/in/sachin-gayakwad-pmp%C2%AE-6%CF%83-black-belt%C2%AE-13005b104/" target="_blank">
-    View Profile
-    </a>
-    </p>
 </div>
 
 </body>
