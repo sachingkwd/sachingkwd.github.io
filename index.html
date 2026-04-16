@@ -10,18 +10,55 @@ body {
     background: #f5f7fa;
 }
 
-/* NAVBAR */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px 50px;
-    background: white;
-}
+ /* NAVBAR */
+   .navbar {
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 20px 60px;
+       background: white;
+       position: sticky;
+       top: 0;
+       z-index: 1000;
+   }
 
-.navbar-right a {
-    text-decoration: none;
-    font-size: 20px;
-}
+   .logo a {
+       font-weight: bold;
+       font-size: 18px;
+   }
+
+   .nav-links a {
+       margin-left: 30px;
+       text-decoration: none;
+       color: #374151;
+       font-weight: 500;
+       font-size: 15px;
+       position: relative;
+       transition: all 0.3s ease;
+   }
+
+   .nav-links a:hover {
+       color: #3b82f6;
+   }
+
+   .nav-links a::after {
+       content: '';
+       position: absolute;
+       width: 0%;
+       height: 2px;
+       left: 0;
+       bottom: -4px;
+       background-color: #3b82f6;
+       transition: width 0.3s ease;
+   }
+
+   .nav-links a:hover::after {
+       width: 100%;
+   }
+
+   html {
+       scroll-behavior: smooth;
+   }
 
 /* HERO */
 .hero {
